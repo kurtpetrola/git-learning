@@ -1,2 +1,3 @@
-# Git-Adv
-For learning advance git commands.
+# Git-Learning
+
+My personal repository for learning Git.
