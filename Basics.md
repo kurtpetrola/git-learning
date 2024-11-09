@@ -2,9 +2,9 @@
 
 1. **git init** : Initializes a new Git repository in the current directory.
 
-2. **git clone <repository-(url)>** : Creates a local copy of a remote Git repository.
+2. **git clone [url]** : Creates a local copy of a remote Git repository.
 
-3. **git add <file(s)>** : Stages changes in the specified file(s) for the next commit.
+3. **git add [file]** : Stages changes in the specified file(s) for the next commit.
 
 - > **git add .** stages all changes in the current directory.
 
@@ -18,9 +18,9 @@
 
 8. **git branch**: Lists all the branches in the local repository.
 
-- > **git branch <(branch-name)>** creates a new branch.
-- > **git checkout <(branch-name)>** switches to the specified branch.
+- > **git branch [branch-name]** creates a new branch.
+- > **git checkout [branch-name]** switches to the specified branch.
 
-9. **git merge <(branch-name)>** : Merges the specified branch into the current branch.
+9. **git merge [branch-name]** : Merges the specified branch into the current branch.
 
 10. **git log** : Displays the commit history of the repository.
