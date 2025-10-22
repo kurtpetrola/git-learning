@@ -1,6 +1,6 @@
 # 🧠 Git Learning
 
-A personal repository for exploring and mastering **Git fundamentals**, **best practices**, and **workflow conventions**.
+My personal repository for exploring and mastering **Git fundamentals**, **best practices**, and **workflow conventions**.
 
 ---
 
