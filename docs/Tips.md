@@ -88,7 +88,7 @@ Use [GitHub Desktop](https://desktop.github.com/) or [GitKraken](https://www.git
 
 > Explore related Git documentation:
 
-- [📘 Basics.md](./Basics.md) — Fundamental Git commands and usage
-- [🧩 Prefixes.md](./Prefixes.md) — Commit and branch naming conventions
-- [⚙️ Advanced.md](./Advanced.md) — Advanced Git commands and workflows
-- [🔗 Resources.md](./Resources.md) — External references and learning materials
+- [📘 Basics](./Basics.md) — Fundamental Git commands and usage
+- [🧩 Prefixes](./Prefixes.md) — Commit and branch naming conventions
+- [⚙️ Advanced](./Advanced.md) — Advanced Git commands and workflows
+- [🔗 Resources](./Resources.md) — External references and learning materials

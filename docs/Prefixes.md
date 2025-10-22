@@ -73,10 +73,10 @@ Consistent commit and branch prefixes help maintain clarity, streamline collabor
 
 > Explore related Git documentation:
 
-- [📘 Basics.md](./Basics.md) — Fundamental Git commands and usage
-- [⚙️ Advanced.md](./Advanced.md) — Advanced Git commands and workflows
-- [💡 Tips.md](./Tips.md) — Practical tips and best practices
-- [🔗 Resources.md](./Resources.md) — External references and learning materials
+- [📘 Basics](./Basics.md) — Fundamental Git commands and usage
+- [⚙️ Advanced](./Advanced.md) — Advanced Git commands and workflows
+- [💡 Tips](./Tips.md) — Practical tips and best practices
+- [🔗 Resources](./Resources.md) — External references and learning materials
 
 ---
 

@@ -44,10 +44,10 @@
 
 > Explore related Git documentation:
 
-- [📘 Basics.md](./Basics.md)
-- [🧩 Prefixes.md](./Prefixes.md)
-- [⚙️ Advanced.md](./Advanced.md)
-- [💡 Tips.md](./Tips.md)
+- [📘 Basics](./Basics.md)
+- [🧩 Prefixes](./Prefixes.md)
+- [⚙️ Advanced](./Advanced.md)
+- [💡 Tips](./Tips.md)
 
 ---
 
