@@ -1,65 +1,72 @@
-# Git Prefixes
+# 🧩 Git Prefixes
 
-## Git Commit Prefixes
+Consistent commit and branch prefixes help maintain clarity, streamline collaboration, and enable automation such as changelog generation and CI/CD triggers.
 
-- **feat** : Indicates a new feature or enhancement.
-  Example: `feat: Add user authentication functionality`
+---
 
-- **fix** : Indicates a bug fix.
-  Example: `fix: Resolve issue with file upload`
+## 🪶 Git Commit Prefixes
 
-- **refactor** : Indicates a code refactoring change.
-  Example: `refactor: Optimize database queries`
+> Based on the [Conventional Commits specification](https://www.conventionalcommits.org/en/v1.0.0/).
 
-- **docs** : Indicates a change to the documentation.
-  Example: `docs: Update README with installation instructions`
+| Prefix       | Purpose                                     | Example                                    |
+| :----------- | :------------------------------------------ | :----------------------------------------- |
+| **feat**     | Introduce a new feature or enhancement      | `feat: add user authentication`            |
+| **fix**      | Resolve a bug or issue                      | `fix: correct file upload failure`         |
+| **docs**     | Documentation changes only                  | `docs: update README installation guide`   |
+| **style**    | Code style or formatting (no logic changes) | `style: apply consistent indentation`      |
+| **refactor** | Code restructuring without behavior change  | `refactor: simplify database queries`      |
+| **test**     | Add or update tests                         | `test: add unit tests for login feature`   |
+| **chore**    | Maintenance or build-related tasks          | `chore: update dependencies`               |
+| **perf**     | Performance improvements                    | `perf: optimize image loading`             |
+| **ci**       | CI/CD configuration changes                 | `ci: configure GitHub Actions for testing` |
+| **build**    | Build system or dependency updates          | `build: update Gradle version`             |
+| **revert**   | Revert a previous commit                    | `revert: undo login fix`                   |
+| **deps**     | Dependency-specific updates                 | `deps: bump firebase version`              |
 
-- **style** : Indicates a change in code style or formatting.
-  Example: `style: Apply consistent code formatting`
+> 💡 You may combine prefixes for clarity (e.g., `feat+docs: add guide for login feature`), but keep messages concise.
 
-- **test** : Indicates adding or updating tests.
-  Example: `test: Add unit tests for login feature`
+---
 
-- **chore** : Indicates a build process or tooling change.
-  Example: `chore: Update dependencies to latest versions`
+## 🧭 Commit Message Format
 
-- **perf** : Indicates a performance improvement.
-  Example: `perf: Optimize image loading time`
+`type(scope): short-summary`
 
-- **ci** : Indicates a change to the continuous integration configuration. Example: `ci: Configure GitHub Actions for automated testing`
+**Examples:**
 
-> Using these prefixes in commit messages can help make the commit history more organized and easier to understand.
+- feat(auth): add Google Sign-In support
+- fix(ui): align login button on mobile
 
-## Git Branch Prefixes
+> ✅ Keep summaries under 72 characters and use the imperative mood (e.g., “add” instead of “added” or “adds”).
 
-- **feature/** or **feat/** : For new feature development
-  Example: `feature/user-authentication or feat/payment-gateway`
+---
 
-- **fix/** or **bugfix/** : For bug fixes
-  Example: `fix/login-error` or `bugfix/memory-leak`
+## 🌿 Git Branch Prefixes
 
-- **hotfix/** : For urgent fixes to production
-  Example: `hotfix/security-vulnerability`
+| Prefix                 | Purpose                           | Example                          |
+| :--------------------- | :-------------------------------- | :------------------------------- |
+| **feature/** (`feat/`) | New feature development           | `feature/user-authentication`    |
+| **fix/** (`bugfix/`)   | Bug fixes                         | `fix/login-error`                |
+| **hotfix/**            | Urgent production fixes           | `hotfix/security-vulnerability`  |
+| **release/**           | Release preparation               | `release/v1.2.0`                 |
+| **develop/** (`dev/`)  | Development or staging branches   | `dev/staging`                    |
+| **chore/**             | Maintenance or build-related work | `chore/update-dependencies`      |
+| **refactor/**          | Code refactoring                  | `refactor/database-optimization` |
+| **test/**              | Testing branches                  | `test/integration-tests`         |
+| **docs/**              | Documentation updates             | `docs/api-documentation`         |
+| **style/**             | Styling or UI changes             | `style/css-redesign`             |
 
-- **release/** : For release branches
-  Example: `release/v1.2.0`
+> ✏️ Use **lowercase** and **hyphens** for branch names (e.g., `feat/add-login-screen`).
 
-- **develop/** or **dev/** : For development branches
-  Example: `develop/main` or `dev/staging`
+---
 
-- **chore/** : For maintenance tasks
-  Example: `chore/update-dependencies`
+## ⚙️ Benefits of Using Prefixes
 
-- **refactor/** : For code refactoring
-  Example: `refactor/database-optimization`
+- 🧭 Organized and readable commit history
+- 🪄 Easier changelog generation
+- 🌱 Clear branch purpose and ownership
+- ⚡ Streamlined CI/CD automation
+- 🧑‍💻 Professional and consistent project structure
 
-- **test/** : For testing branches
-  Example: `test/integration-tests`
+---
 
-- **docs/** : For documentation updates
-  Example: `docs/api-documentation`
-
-- **style/** : For styling changes
-  Example: `style/css-redesign`
-
-> This helps keep branches organized and makes it clear what work is being done in each branch.
+_This guide ensures your repository remains consistent, maintainable, and professional across all stages of development._
