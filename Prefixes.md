@@ -33,7 +33,7 @@ Consistent commit and branch prefixes help maintain clarity, streamline collabor
 
 **Examples:**
 
-- feat(auth): add Google Sign-In support
+- feat(auth): add google sign-in support
 - fix(ui): align login button on mobile
 
 > ✅ Keep summaries under 72 characters and use the imperative mood (e.g., “add” instead of “added” or “adds”).
