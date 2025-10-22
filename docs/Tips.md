@@ -1,0 +1,94 @@
+# 💡 Git Tips and Best Practices
+
+> Quick tips, reminders, and useful patterns to help you become more efficient with Git.
+
+---
+
+### 🧠 General Tips
+
+- **Commit often, but with purpose.** Small, meaningful commits make it easier to track changes.
+- **Write clear commit messages.** Use the imperative mood and describe _what_ and _why_.
+- **Avoid committing secrets.** Use `.gitignore` to exclude sensitive files like `.env`.
+- **Pull before pushing.** Always sync your branch before pushing changes to avoid conflicts.
+- **Use branches wisely.** Keep `main` or `master` clean; do experimental work in feature branches.
+
+---
+
+### 🧰 Handy Commands
+
+- **Undo last commit (keep changes):**
+
+  ```bash
+  git reset --soft HEAD~1
+
+  ```
+
+- **Undo last commit (discard changes):**
+
+  ```bash
+  git reset --hard HEAD~1
+
+  ```
+
+- **Amend the previous commit:**
+
+  ```bash
+  git commit --amend
+
+  ```
+
+- **View changes before committing:**
+
+  ```bash
+  git diff
+
+  ```
+
+- **View branch history visually:**
+  ```bash
+  git log --oneline --graph --decorate --all
+  ```
+
+---
+
+### 🚀 Workflow Recommendations
+
+- Create a `dev` branch for testing changes before merging to `main`.
+- Use **Pull Requests (PRs)** even in solo projects for practice and documentation.
+- Tag versions using **semantic versioning**:
+  ```bash
+  git tag -a v1.0.0 -m "Initial release"
+  ```
+
+---
+
+### 🧹 Maintenance Tips
+
+- **Clean up merged branches (local)**:
+
+  ```bash
+  git branch --merged | grep -v "main" | xargs git branch -d
+
+  ```
+
+- **Prune remote-tracking branches**:
+  ```bash
+  git remote prune origin
+  ```
+
+---
+
+### 🪄 Pro Tips:
+
+Use [GitHub Desktop](https://desktop.github.com/) or [GitKraken](https://www.gitkraken.com/) for visualizing commits when learning Git workflows.
+
+---
+
+## 🔗 See Also
+
+> Explore related Git documentation:
+
+- [📘 Basics.md](./Basics.md) — Fundamental Git commands and usage
+- [🧩 Prefixes.md](./Prefixes.md) — Commit and branch naming conventions
+- [⚙️ Advanced.md](./Advanced.md) — Advanced Git commands and workflows
+- [🔗 Resources.md](./Resources.md) — External references and learning materials
