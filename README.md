@@ -22,4 +22,13 @@
 - [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
 - [GitLab Version Control Best Practices](https://about.gitlab.com/topics/version-control/version-control-best-practices/)
 
+---
+
+## ⚖️ License
+
+This repository is licensed under the [MIT License](https://github.com/kurtpetrola/git-learning/blob/main/LICENSE).
+It serves as a personal learning resource, but others are welcome to explore, reference, and reuse the materials with proper attribution.
+
+---
+
 _This repository serves as a structured space to document notes, examples, and workflows while learning Git._
