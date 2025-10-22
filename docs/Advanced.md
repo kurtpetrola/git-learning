@@ -75,8 +75,12 @@ A deeper look into powerful Git commands for refining commits, managing branches
 
 ## 🔗 See Also
 
+> Explore related Git documentation:
+
 - [🧩 Prefixes.md](./Prefixes.md) — Commit and branch naming conventions
 - [📘 Basics.md](./Basics.md) — Fundamental Git commands and usage
+- [💡 Tips.md](./Tips.md) — Practical tips and best practices
+- [🔗 Resources.md](./Resources.md) — External references and learning materials
 
 ---
 

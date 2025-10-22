@@ -44,8 +44,12 @@ Essential Git commands for initializing, managing, and collaborating on reposito
 
 ## 🔗 See Also
 
+> Explore related Git documentation:
+
 - [🧩 Prefixes.md](./Prefixes.md) — Commit and branch naming conventions
 - [⚙️ Advanced.md](./Advanced.md) — Advanced Git commands and workflows
+- [💡 Tips.md](./Tips.md) — Practical tips and best practices
+- [🔗 Resources.md](./Resources.md) — External references and learning materials
 
 ---
 
