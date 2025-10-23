@@ -24,6 +24,13 @@
 
 ---
 
+## 💖 Support & Connect
+
+If you found this repository helpful, consider leaving a ⭐ on [Git Learning](https://github.com/kurtpetrola/git-learning).  
+You can also [follow me](https://github.com/kurtpetrola) on GitHub to stay updated with my latest projects.
+
+---
+
 ## ⚖️ License
 
 This repository is licensed under the [MIT License](https://github.com/kurtpetrola/git-learning/blob/main/LICENSE).
