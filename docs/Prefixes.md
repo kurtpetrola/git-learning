@@ -27,6 +27,37 @@ Consistent commit and branch prefixes help maintain clarity, streamline collabor
 
 ---
 
+## 🏷️ Common Scopes
+
+Scopes define the specific area of the project the change affects.
+Use them consistently to make your commit history more meaningful.
+
+| Scope Example | Description                               |
+| :------------ | :---------------------------------------- |
+| **auth**      | Authentication and authorization logic    |
+| **ui**        | User interface components and styles      |
+| **api**       | API integrations or backend communication |
+| **db**        | Database models, migrations, or queries   |
+| **build**     | Build scripts and configurations          |
+| **config**    | Environment or project settings           |
+| **docs**      | Documentation content or structure        |
+
+> 🔸 Keep scopes short, lowercase, and descriptive — e.g. `feat(ui): add dark mode toggle`
+
+---
+
+## 🔧 Extended Prefixes (Optional)
+
+| Prefix    | Purpose                                 | Example                                 |
+| :-------- | :-------------------------------------- | :-------------------------------------- |
+| **wip**   | Work in progress (not ready for review) | `wip: update dashboard layout`          |
+| **temp**  | Temporary or experimental change        | `temp: try alternate login method`      |
+| **merge** | Merging branches or resolving conflicts | `merge: resolve feature/auth conflicts` |
+
+> ⚠️ Use these sparingly and squash them before merging to keep the main history clean.
+
+---
+
 ## 🧭 Commit Message Format
 
 `type(scope): short-summary`
@@ -37,8 +68,41 @@ Consistent commit and branch prefixes help maintain clarity, streamline collabor
 - fix(ui): align login button on mobile
 
 > ✅ Keep summaries under 72 characters and use the imperative mood (e.g., “add” instead of “added” or “adds”).
+> 🪄 Pro Tip: Use tools like [Commitizen](https://github.com/commitizen/cz-cli) or [Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog) to enforce these rules automatically.
 
 ---
+
+## ✅ Commit Message Do’s and Don’ts
+
+### Do:
+
+- ✅ Use a clear, concise summary (e.g., `fix(api): handle 404 errors gracefully`)
+- ✅ Write in imperative mood (“add”, “fix”, “update”)
+- ✅ Include scope when meaningful
+- ✅ Group related commits logically
+- ✅ Reference issues or PRs when relevant (e.g., `fix(auth): resolve token refresh bug (#42)`)
+
+### Don’t:
+
+- ❌ Write vague messages like “update”, “fix stuff”, or “misc changes”
+- ❌ Use past tense or third person (“added feature”, “adds login page”)
+- ❌ Combine unrelated changes in one commit
+- ❌ Use emojis or decorative text in commit subjects
+- ❌ Leave long details in the subject — use the body for explanations instead
+
+> 💬 Think of your commit message as a changelog entry for your future self (and teammates).
+
+### 🧩 Good vs Bad Examples
+
+| ✅ Good Commit                                 | ❌ Bad Commit         |
+| :--------------------------------------------- | :-------------------- |
+| `feat(auth): add google sign-in support`       | `added login feature` |
+| `fix(ui): align login button on mobile`        | `fixed ui`            |
+| `docs(readme): clarify installation steps`     | `update docs`         |
+| `refactor(api): simplify error handling logic` | `cleanup code`        |
+| `chore(deps): bump react version to 18.2.0`    | `update react`        |
+
+> 🔍 Notice how good commits are structured, specific, and action-oriented, while bad ones are vague or inconsistent.
 
 ## 🌿 Git Branch Prefixes
 
