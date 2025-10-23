@@ -31,4 +31,4 @@ It serves as a personal learning resource, but others are welcome to explore, re
 
 ---
 
-_This repository serves as a structured space to document notes, examples, and workflows while learning Git._
+_This repository provides a structured space for documenting notes, examples, and workflows while learning Git._
