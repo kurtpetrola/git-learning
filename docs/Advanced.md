@@ -2,47 +2,84 @@
 
 A deeper look into powerful Git commands for refining commits, managing branches, and handling complex version control workflows.
 
+> 📘 If you’re new to Git, start with [Basics](./Basics.md) before diving into these commands.
+
+---
+
+## 🧩 Advanced Workflow Overview
+
+     ┌────────────────────────┐
+     │      git stash         │
+     │ Save work temporarily  │
+     └──────────┬─────────────┘
+                │
+                ▼
+     ┌────────────────────────┐
+     │      git rebase        │
+     │ Reapply commits cleanly│
+     └──────────┬─────────────┘
+                │
+                ▼
+     ┌────────────────────────┐
+     │   git cherry-pick      │
+     │ Apply specific commits │
+     └──────────┬─────────────┘
+                │
+                ▼
+     ┌────────────────────────┐
+     │      git merge         │
+     │ Integrate final branch │
+     └────────────────────────┘
+
+> 💡 This diagram illustrates how advanced commands refine, apply, and integrate commits for cleaner, more controlled version histories.
+
 ---
 
 ## 🧠 Commit & History Management
 
-- **`git commit --amend`** : Modify the most recent commit (message or staged files).
-- **`git revert <commit>`** : Create a new commit that undoes the changes of a previous one.
-- **`git reset [--soft|--mixed|--hard] <commit>`** : Move HEAD to a specific commit with different levels of file/stage reset.
+- **`git commit --amend`** — Modify the most recent commit (message or staged files).
+- **`git revert <commit>`** — Create a new commit that undoes the changes of a previous one.
+
+  ```bash
+  git revert abc1234
+  # creates a new commit reversing abc1234
+  ```
+
+- **`git reset [--soft|--mixed|--hard] <commit>`** — Move HEAD to a specific commit with different levels of file/stage reset.
 
   - `--soft` → Keeps changes staged.
   - `--mixed` → Keeps changes in working directory.
   - `--hard` → Discards all changes.
 
-- **`git reflog`** : Shows the history of all HEAD movements (useful for recovery).
+- **`git reflog`** — Shows the history of all HEAD movements (useful for recovery).
 
 ---
 
 ## 🌿 Branch & Merge Management
 
-- **`git rebase [branch]`** : Reapply commits on top of another base branch (creates a linear history).
-- **`git cherry-pick <commit>`** : Apply a specific commit from another branch.
-- **`git stash`** : Temporarily save changes without committing.
+- **`git rebase [branch]`** — Reapply commits on top of another base branch (creates a linear history).
+- **`git cherry-pick <commit>`** — Apply a specific commit from another branch.
+- **`git stash`** — Temporarily save changes without committing.
 
   - `git stash pop` → Reapply the last stashed changes.
   - `git stash list` → Show all stashes.
 
-- **`git merge --no-ff [branch]`** : Merge a branch while preserving commit history.
+- **`git merge --no-ff [branch]`** — Merge a branch while preserving commit history.
 
 ---
 
 ## 🏷️ Tagging & Releases
 
-- **`git tag <tag-name>`** : Create a lightweight tag (e.g., version markers).
-- **`git tag -a <tag-name> -m "message"`** : Create an annotated tag with a message.
-- **`git push origin --tags`** : Push all tags to the remote repository.
+- **`git tag <tag-name>`** — Create a lightweight tag (e.g., version markers).
+- **`git tag -a <tag-name> -m "message"`** — Create an annotated tag with a message.
+- **`git push origin --tags`** — Push all tags to the remote repository.
 
 ---
 
 ## 🔍 Inspecting Changes
 
-- **`git show <commit>`** : Display details and changes of a specific commit.
-- **`git diff`** : Compare changes between working directory, staging area, and commits.
+- **`git show <commit>`** — Display details and changes of a specific commit.
+- **`git diff`** — Compare changes between working directory, staging area, and commits.
   - `git diff HEAD` → Compare current changes with the last commit.
   - `git diff --staged` → Show differences between staged changes and the last commit.
 
@@ -50,22 +87,30 @@ A deeper look into powerful Git commands for refining commits, managing branches
 
 ## 🌐 Remote Repository Management
 
-- **`git remote -v`** : List remote connections.
-- **`git fetch`** : Download objects and refs from the remote without merging.
-- **`git pull --rebase`** : Update local branch while maintaining a cleaner history.
-- **`git remote prune origin`** : Remove references to remote-tracking branches that no longer exist.
+- **`git remote -v`** — List remote connections.
+- **`git fetch`** — Download objects and refs from the remote without merging.
+- **`git pull --rebase`** — Update local branch while maintaining a cleaner history.
+- **`git remote prune origin`** — Remove references to remote-tracking branches that no longer exist.
 
 ---
 
 ## 🧩 Troubleshooting & Recovery
 
-- **`git restore <file>`** : Restore working directory files to a previous state.
-- **`git bisect`** : Find the commit that introduced a bug by binary search.
-- **`git clean -fd`** : Remove untracked files and directories.
+- **`git restore <file>`** — Restore working directory files to a previous state.
+
+  ```bash
+  git restore src/app.js
+  # restores app.js to the last committed state
+  ```
+
+- **`git bisect`** — Find the commit that introduced a bug by binary search.
+- **`git clean -fd`** — Remove untracked files and directories.
 
 ---
 
 ## 🚀 Tips
+
+These practical reminders help maintain efficient, safe Git usage in everyday scenarios.
 
 - Use **rebase** instead of merge for a cleaner, linear history in personal branches.
 - Run **`git stash`** before switching branches to avoid losing uncommitted work.
@@ -73,16 +118,18 @@ A deeper look into powerful Git commands for refining commits, managing branches
 
 ---
 
-## 🌐 Collaboration Workflows
+## 🤝 Collaboration Workflows
 
 Understanding team-oriented branching models is key for efficient collaboration and maintaining clean histories in shared repositories.
 
 ### 🔀 Feature Branch Workflow
 
 - Create a new branch for each feature or fix:
+
   ```bash
-  git checkout -b feature/awesome-feature
+  git switch -c feature/awesome-feature
   ```
+
 - Push and open a Pull Request (PR) or Merge Request (MR) when ready.
 - Keeps `main` or `develop` branch stable and deployable.
 
@@ -97,28 +144,80 @@ Understanding team-oriented branching models is key for efficient collaboration 
 - Used for managing releases and bug fixes separately.
 - Create a release branch from `develop`:
 
-```bash
+  ```bash
   git checkout -b release/v1.0.0 develop
-```
+  ```
 
 - Fix bugs or finalize documentation before merging into both `main` and `develop`.
 - Tag final versions:
 
-```bash
+  ```bash
   git tag -a v1.0.0 -m "Version 1.0.0 release"
-```
+  ```
 
 ### 🧩 Gitflow Model (Hybrid)
 
 - Combines feature, release, and hotfix branches under a structured workflow.
 - Branch types:
+
   - `main` — production-ready code
   - `develop` — integration branch
   - `feature/*` — new features
   - `release/*` — upcoming releases
   - `hotfix/*` — urgent patches
 
-> Ideal for teams handling multiple parallel development streams
+  > Ideal for teams handling multiple parallel development streams.
+
+---
+
+## 🧩 Common Advanced Workflows
+
+> Practical examples for applying advanced Git commands in real-world scenarios.
+
+### 🔄 Rebase a Feature Branch onto Main
+
+```bash
+git switch feat/new-feature
+git fetch origin
+git rebase origin/main
+# resolve conflicts if any
+git push --force-with-lease
+```
+
+> 🧠 Keeps feature history clean and avoids merge clutter.
+
+### 🍒 Cherry-Pick a Specific Commit
+
+```bash
+git switch main
+git cherry-pick abc1234
+```
+
+> 💡 Useful when you need a single fix from another branch without merging the whole thing.
+
+### 🧺 Stash and Restore Changes
+
+```bash
+git stash push -m "wip: refactor UI"
+git switch main
+git pull --rebase
+git switch feat/ui-update
+git stash pop
+```
+
+> 🪄 Safely save your work-in-progress before syncing or switching branches.
+
+### 🧪 Bisect to Find a Bug
+
+```bash
+git bisect start
+git bisect bad
+git bisect good <commit-hash>
+# test commits as prompted
+git bisect reset
+```
+
+> 🔍 Automates debugging by isolating the exact commit that introduced a regression.
 
 ---
 
