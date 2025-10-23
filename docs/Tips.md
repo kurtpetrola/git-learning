@@ -78,7 +78,7 @@
 
 ---
 
-### 🪄 Pro Tips:
+### 🪄 Pro Tips
 
 Use [GitHub Desktop](https://desktop.github.com/) or [GitKraken](https://www.gitkraken.com/) for visualizing commits when learning Git workflows.
 
@@ -92,3 +92,7 @@ Use [GitHub Desktop](https://desktop.github.com/) or [GitKraken](https://www.git
 - [🧩 Prefixes](./Prefixes.md) — Commit and branch naming conventions
 - [⚙️ Advanced](./Advanced.md) — Advanced Git commands and workflows
 - [🔗 Resources](./Resources.md) — External references and learning materials
+
+---
+
+_These tips help you maintain clean, efficient, and professional Git workflows every day._
