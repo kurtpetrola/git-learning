@@ -65,6 +65,18 @@ A deeper look into powerful Git commands for refining commits, managing branches
   - `git stash list` → Show all stashes.
 
 - **`git merge --no-ff [branch]`** — Merge a branch while preserving commit history.
+- **`git branch -m <new-name>`** — Rename the current local branch.
+
+  ```bash
+  # 1. Rename the local branch (e.g., from 'feat/old-bug' to 'feature/fix-bug')
+  git branch -m feature/fix-bug
+
+  # 2. Push the new branch and set it as upstream (or use the existing alias -u)
+  git push origin -u feature/fix-bug
+
+  # 3. Optional: Delete the old name on the remote
+  git push origin --delete feat/old-bug
+  ```
 
 ---
 
@@ -227,7 +239,7 @@ git bisect reset
 
 - [🧩 Prefixes](./Prefixes.md) — Commit and branch naming conventions
 - [📘 Basics](./Basics.md) — Fundamental Git commands and usage
-- [💡 Tips](./Tips.md) — Practical tips and best practices
+- [💡 Tips](./Tips.md) — Practical tips and best practices~~
 - [🔗 Resources](./Resources.md) — External references and learning materials
 
 ---
