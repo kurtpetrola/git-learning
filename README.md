@@ -24,6 +24,8 @@ All learning materials are organized within the docs/ subdirectory:
 
 - `docs/`: Contains all modular guides (Basics, Advanced, Prefixes, Tips, Resources).
 
+---
+
 ## 🧭 References
 
 - [Git Guides](https://github.com/git-guides)
