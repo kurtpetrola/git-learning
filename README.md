@@ -2,6 +2,8 @@
 
 👾 My personal repository for exploring and mastering **Git fundamentals**, **best practices**, and **workflow conventions**.
 
+> **Goal:** A structured, practical guide to moving from basic commands to professional workflow conventions, including branch prefixes, safe force-pushing, and clean history management.
+
 ---
 
 ## 📚 Documentation
@@ -13,6 +15,14 @@
 - [🔗 Resources](./docs/Resources.md)
 
 ---
+
+## 📂 Project Structure
+
+All learning materials are organized within the docs/ subdirectory:
+
+- `/` (Root): Contains this `README.md` and licensing information.
+
+- `docs/`: Contains all modular guides (Basics, Advanced, Prefixes, Tips, Resources).
 
 ## 🧭 References
 
