@@ -16,13 +16,14 @@ Consistent commit and branch prefixes help maintain clarity, streamline collabor
 | **style**    | Code style or formatting (no logic changes) | `style: apply consistent indentation`      |
 | **refactor** | Code restructuring without behavior change  | `refactor: simplify database queries`      |
 | **test**     | Add or update tests                         | `test: add unit tests for login feature`   |
-| **chore**    | Maintenance or build-related tasks          | `chore: update dependencies`               |
+| **chore**    | Maintenance (non-code, non-CI, non-build)   | `chore: update dependencies`               |
 | **perf**     | Performance improvements                    | `perf: optimize image loading`             |
 | **ci**       | CI/CD configuration changes                 | `ci: configure GitHub Actions for testing` |
-| **build**    | Build system or dependency updates          | `build: update Gradle version`             |
+| **build**    | Build system configuration/packaging        | `build: update Gradle version`             |
 | **revert**   | Revert a previous commit                    | `revert: undo login fix`                   |
-| **deps**     | Dependency-specific updates                 | `deps: bump firebase version`              |
+| **deps**     | Direct dependency version bumps             | `deps: bump firebase version`              |
 
+> ❗ **Breaking Change**: Suffix any prefix with `!` (e.g., `feat!`: or `fix!`:). This signals that the change is API-incompatible and requires a major version bump.
 > 💡 You may combine prefixes for clarity (e.g., `feat+docs: add guide for login feature`), but keep messages concise.
 
 ---
