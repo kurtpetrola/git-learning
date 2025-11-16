@@ -15,8 +15,8 @@ A deeper look into powerful Git commands for refining commits, managing branches
                 │
                 ▼
      ┌────────────────────────┐
-     │      git rebase        │
-     │ Reapply commits cleanly│
+     │      git rebase -i     │
+     │ Clean up commit history│
      └──────────┬─────────────┘
                 │
                 ▼
@@ -37,6 +37,8 @@ A deeper look into powerful Git commands for refining commits, managing branches
 
 ## 🧠 Commit & History Management
 
+A deeper look at tools for rewriting history, fixing mistakes, and cleaning up commit logs.
+
 - **`git commit --amend`** — Modify the most recent commit (message or staged files).
 - **`git revert <commit>`** — Create a new commit that undoes the changes of a previous one.
 
@@ -52,6 +54,12 @@ A deeper look into powerful Git commands for refining commits, managing branches
   - `--hard` → Discards all changes.
 
 - **`git reflog`** — Shows the history of all HEAD movements (useful for recovery).
+- **`git rebase -i <commit-hash>`** — Interactive Rebase ✍️. The master tool for history rewriting. Allows you to **squash**, **edit**, **reword**, **reorder**, and **drop** commits in a range.
+
+```bash
+# Opens an editor to modify the last 3 commits before pushing
+git rebase -i HEAD~3
+```
 
 ---
 
@@ -78,6 +86,8 @@ A deeper look into powerful Git commands for refining commits, managing branches
   git push origin --delete feat/old-bug
   ```
 
+- **`git branch --set-upstream-to=origin/<branch> <local-branch>`** — Explicitly configure or change the remote tracking branch for a local branch.
+
 ---
 
 ## 🏷️ Tagging & Releases
@@ -94,6 +104,7 @@ A deeper look into powerful Git commands for refining commits, managing branches
 - **`git diff`** — Compare changes between working directory, staging area, and commits.
   - `git diff HEAD` → Compare current changes with the last commit.
   - `git diff --staged` → Show differences between staged changes and the last commit.
+- **`git log -p <file>`** — Shows the commit history and the full patch (diff) for every commit that modified a specific file.
 
 ---
 
@@ -102,6 +113,7 @@ A deeper look into powerful Git commands for refining commits, managing branches
 - **`git remote -v`** — List remote connections.
 - **`git fetch`** — Download objects and refs from the remote without merging.
 - **`git pull --rebase`** — Update local branch while maintaining a cleaner history.
+- **`git push --force-with-lease`** — Safely overwrite remote history after a local rebase or amend. This check prevents accidental overwrites of remote work
 - **`git remote prune origin`** — Remove references to remote-tracking branches that no longer exist.
 
 ---
@@ -124,7 +136,8 @@ A deeper look into powerful Git commands for refining commits, managing branches
 
 These practical reminders help maintain efficient, safe Git usage in everyday scenarios.
 
-- Use **rebase** instead of merge for a cleaner, linear history in personal branches.
+- Use **interactive rebase** (`git rebase -i`) to clean up commits before merging or pushing a feature branch.
+- Use **`git push --force-with-lease`** instead of `git push --force` after rewriting history.
 - Run **`git stash`** before switching branches to avoid losing uncommitted work.
 - Use **annotated tags** for official releases (`git tag -a v1.0.0 -m "First release"`).
 
