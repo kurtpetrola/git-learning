@@ -8,6 +8,7 @@
 
 - [Git SCM Documentation](https://git-scm.com/doc)
 - [Pro Git Book (Free)](https://git-scm.com/book/en/v2)
+- [Conventional Commits Specification](https://www.conventionalcommits.org/en/v1.0.0/)
 - [GitHub Docs](https://docs.github.com/en)
 - [GitLab Docs](https://docs.gitlab.com/)
 
