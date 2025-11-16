@@ -8,6 +8,7 @@
 
 - **Commit often, but with purpose.** Small, meaningful commits make it easier to track changes.
 - **Write clear commit messages.** Use the imperative mood and describe _what_ and _why_.
+- **Tidy up before sharing.** Use `git rebase -i` to squash, reword, or drop commits before pushing a feature branch.
 - **Avoid committing secrets.** Use `.gitignore` to exclude sensitive files like `.env`.
 - **Pull before pushing.** Always sync your branch before pushing changes to avoid conflicts.
 - **Use branches wisely.** Keep `main` or `master` clean; do experimental work in feature branches.
@@ -20,7 +21,6 @@
 
   ```bash
   git reset --soft HEAD~1
-
   ```
 
 - **Undo last commit (discard changes):**
@@ -34,14 +34,19 @@
 
   ```bash
   git commit --amend
+  ```
 
+- **Temporarily save uncommitted work:**
+
+  ```bash
+  git stash
+  git stash pop
   ```
 
 - **View changes before committing:**
 
   ```bash
   git diff
-
   ```
 
 - **View branch history visually:**
@@ -55,9 +60,12 @@
 
 - Create a `dev` branch for testing changes before merging to `main`.
 - Use **Pull Requests (PRs)** even in solo projects for practice and documentation.
+- **Force push safely:** If you rebase or amend a shared branch, use git `push --force-with-lease` instead of `--force` to prevent overwriting someone else's work.
 - Tag versions using **semantic versioning**:
+
   ```bash
   git tag -a v1.0.0 -m "Initial release"
+
   ```
 
 ---
@@ -68,7 +76,6 @@
 
   ```bash
   git branch --merged | grep -v "main" | xargs git branch -d
-
   ```
 
 - **Prune remote-tracking branches**:
