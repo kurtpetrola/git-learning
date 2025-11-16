@@ -74,7 +74,9 @@ Essential Git commands for initializing, managing, and collaborating on reposito
   - **`git branch <branch-name>`** — Create a new branch.
 - **`git switch <branch-name>`** — Switch to another branch (recommended over `checkout`).
 - **`git merge <branch-name>`** — Merge the specified branch into the current one.
-  > 🪄 Keep your `main` branch stable; use feature branches for development and experimentation.
+- **`git branch -d <branch-name>`** — **Delete the local branch (safe)**. Only deletes if the branch has been fully merged into its upstream.
+  - Use **`git branch -D <branch-name>`** to **forcefully** delete the branch, even if it has unmerged changes.
+    > 🪄 Keep your `main` branch stable; use feature branches for development and experimentation.
 
 ---
 
