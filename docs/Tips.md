@@ -98,6 +98,7 @@ Use [GitHub Desktop](https://desktop.github.com/) or [GitKraken](https://www.git
 - [📘 Basics](./Basics.md) — Fundamental Git commands and usage
 - [🧩 Prefixes](./Prefixes.md) — Commit and branch naming conventions
 - [⚙️ Advanced](./Advanced.md) — Advanced Git commands and workflows
+- [🚀 Modern](./Modern.md) — Modern Git features and tools
 - [🔗 Resources](./Resources.md) — External references and learning materials
 
 ---

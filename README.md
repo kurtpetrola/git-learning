@@ -11,6 +11,7 @@
 - [📘 Basics](./docs/Basics.md)
 - [🧩 Prefixes](./docs/Prefixes.md)
 - [⚙️ Advanced](./docs/Advanced.md)
+- [🚀 Modern](./docs/Modern.md)
 - [💡 Tips](./docs/Tips.md)
 - [🔗 Resources](./docs/Resources.md)
 
