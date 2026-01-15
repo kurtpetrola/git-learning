@@ -99,6 +99,7 @@ Use [GitHub Desktop](https://desktop.github.com/) or [GitKraken](https://www.git
 - [🧩 Prefixes](./Prefixes.md) — Commit and branch naming conventions
 - [⚙️ Advanced](./Advanced.md) — Advanced Git commands and workflows
 - [🚀 Modern](./Modern.md) — Modern Git features and tools
+- [🔧 Troubleshooting](./Troubleshooting.md) — Common problems and solutions
 - [🔗 Resources](./Resources.md) — External references and learning materials
 
 ---

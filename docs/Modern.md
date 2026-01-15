@@ -511,6 +511,7 @@ git log --all --format='%aN' | sort -u | wc -l  # Number of contributors
 - [📘 Basics](./Basics.md) — Fundamental Git commands and usage
 - [⚙️ Advanced](./Advanced.md) — Advanced Git commands and workflows
 - [🧩 Prefixes](./Prefixes.md) — Commit and branch naming conventions
+- [🔧 Troubleshooting](./Troubleshooting.md) — Common problems and solutions
 - [💡 Tips](./Tips.md) — Practical tips and best practices
 - [🔗 Resources](./Resources.md) — External references and learning materials
 

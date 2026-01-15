@@ -252,8 +252,9 @@ git bisect reset
 
 - [🧩 Prefixes](./Prefixes.md) — Commit and branch naming conventions
 - [📘 Basics](./Basics.md) — Fundamental Git commands and usage
-- [� Modern](./Modern.md) — Modern Git features and tools
-- [�💡 Tips](./Tips.md) — Practical tips and best practices
+- [🚀 Modern](./Modern.md) — Modern Git features and tools
+- [🔧 Troubleshooting](./Troubleshooting.md) — Common problems and solutions
+- [💡 Tips](./Tips.md) — Practical tips and best practices
 - [🔗 Resources](./Resources.md) — External references and learning materials
 
 ---

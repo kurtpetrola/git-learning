@@ -148,6 +148,7 @@ git push origin --delete feat/new-feature
 - [🧩 Prefixes](./Prefixes.md) — Commit and branch naming conventions
 - [⚙️ Advanced](./Advanced.md) — Advanced Git commands and workflows
 - [🚀 Modern](./Modern.md) — Modern Git features and tools
+- [🔧 Troubleshooting](./Troubleshooting.md) — Common problems and solutions
 - [💡 Tips](./Tips.md) — Practical tips and best practices
 - [🔗 Resources](./Resources.md) — External references and learning materials
 

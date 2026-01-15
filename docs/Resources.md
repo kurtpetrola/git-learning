@@ -49,6 +49,7 @@
 - [🧩 Prefixes](./Prefixes.md)
 - [⚙️ Advanced](./Advanced.md)
 - [🚀 Modern](./Modern.md)
+- [🔧 Troubleshooting](./Troubleshooting.md)
 - [💡 Tips](./Tips.md)
 
 ---
