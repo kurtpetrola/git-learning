@@ -91,6 +91,151 @@ Use [GitHub Desktop](https://desktop.github.com/) or [GitKraken](https://www.git
 
 ---
 
+### 📝 .gitignore Best Practices
+
+- **Start with a template:** Use [gitignore.io](https://www.toptal.com/developers/gitignore) to generate `.gitignore` for your tech stack.
+- **Common patterns:**
+
+  ```gitignore
+  # Dependencies
+  node_modules/
+  vendor/
+
+  # Environment variables
+  .env
+  .env.local
+
+  # IDE and editor files
+  .vscode/
+  .idea/
+  *.swp
+  *~
+
+  # OS files
+  .DS_Store
+  Thumbs.db
+
+  # Build outputs
+  dist/
+  build/
+  *.log
+  ```
+
+- **Don't commit sensitive data:** API keys, passwords, tokens should never be in version control.
+- **Global gitignore:** Create `~/.gitignore_global` for personal files:
+
+  ```bash
+  git config --global core.excludesfile ~/.gitignore_global
+  ```
+
+---
+
+### ✍️ Commit Message Templates
+
+Create a commit message template for consistency:
+
+**1. Create template file `~/.gitmessage`:**
+
+```
+# <type>(<scope>): <subject>
+# |<----  Using a Maximum Of 50 Characters  ---->|
+
+# Explain why this change is being made
+# |<----   Try To Limit Each Line to a Maximum Of 72 Characters   ---->|
+
+# Provide links or keys to any relevant tickets, articles or other resources
+# Example: closes #23
+
+# --- COMMIT END ---
+# Type can be
+#    feat     (new feature)
+#    fix      (bug fix)
+#    refactor (refactoring code)
+#    style    (formatting, missing semi colons, etc)
+#    docs     (changes to documentation)
+#    test     (adding or refactoring tests)
+#    chore    (maintain)
+# --------------------
+# Remember to:
+#   - Capitalize the subject line
+#   - Use the imperative mood in the subject line
+#   - Do not end the subject line with a period
+#   - Separate subject from body with a blank line
+#   - Use the body to explain what and why vs. how
+#   - Can use multiple lines with "-" or "*" for bullet points in body
+```
+
+**2. Configure Git to use it:**
+
+```bash
+git config --global commit.template ~/.gitmessage
+```
+
+---
+
+### 🪝 Git Hooks Quick Tips
+
+- **Make hooks executable:** `chmod +x .git/hooks/pre-commit`
+- **Share hooks with team:** Use tools like [Husky](https://typicode.github.io/husky/) (Node.js) or [pre-commit](https://pre-commit.com/) (Python)
+- **Common use cases:**
+  - `pre-commit`: Run linters, formatters, tests
+  - `commit-msg`: Enforce commit message format
+  - `pre-push`: Run full test suite
+
+**Example pre-commit hook (lint check):**
+
+```bash
+#!/bin/sh
+npm run lint
+if [ $? -ne 0 ]; then
+  echo "❌ Linting failed. Fix errors before committing."
+  exit 1
+fi
+```
+
+---
+
+### 🔍 Code Review Best Practices
+
+- **Keep PRs small:** Easier to review, less likely to introduce bugs
+- **Self-review first:** Review your own changes before requesting review
+- **Write descriptive PR descriptions:** Include what, why, and how
+- **Use draft PRs:** For work-in-progress that needs early feedback
+- **Respond to feedback:** Address comments or explain why you disagree
+- **Use conventional comments:**
+  - `nit:` - Minor suggestion, not blocking
+  - `question:` - Asking for clarification
+  - `suggestion:` - Proposing an alternative
+  - `blocking:` - Must be addressed before merge
+
+---
+
+### 🧼 Repository Hygiene
+
+- **Delete merged branches:** Keep repository clean
+
+  ```bash
+  git branch -d feature/completed-feature
+  git push origin --delete feature/completed-feature
+  ```
+
+- **Run garbage collection periodically:**
+
+  ```bash
+  git gc --aggressive --prune=now
+  ```
+
+- **Keep commits atomic:** One logical change per commit
+- **Squash fixup commits:** Before merging to main
+
+  ```bash
+  git rebase -i main
+  ```
+
+- **Use meaningful branch names:** `feat/user-auth`, not `my-branch`
+
+---
+
 ## 🔗 See Also
 
 > Explore related Git documentation:
