@@ -1,6 +1,6 @@
 # 🧠 Git Learning
 
-👾 My personal repository for exploring and mastering **Git fundamentals**, **best practices**, and **workflow conventions**.
+A comprehensive repository for mastering **Git fundamentals**, **best practices**, and **workflow conventions**.
 
 > **Goal:** A structured, practical guide to moving from basic commands to professional workflow conventions, including branch prefixes, safe force-pushing, and clean history management.
 
