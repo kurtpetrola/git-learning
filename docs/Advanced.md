@@ -252,7 +252,7 @@ git bisect reset
 
 - [🧩 Prefixes](./Prefixes.md) — Commit and branch naming conventions
 - [📘 Basics](./Basics.md) — Fundamental Git commands and usage
-- [💡 Tips](./Tips.md) — Practical tips and best practices~~
+- [💡 Tips](./Tips.md) — Practical tips and best practices
 - [🔗 Resources](./Resources.md) — External references and learning materials
 
 ---
