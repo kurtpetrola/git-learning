@@ -47,7 +47,7 @@ This comprehensive Git learning resource includes:
 
 ---
 
-## �📚 Documentation
+## 📚 Documentation
 
 - [📘 Basics](./docs/Basics.md) - Fundamental Git commands and usage
 - [🧩 Prefixes](./docs/Prefixes.md) - Commit and branch naming conventions
