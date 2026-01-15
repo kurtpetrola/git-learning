@@ -14,6 +14,7 @@
 - [🚀 Modern](./docs/Modern.md)
 - [🔧 Troubleshooting](./docs/Troubleshooting.md)
 - [⚙️ Config](./docs/Config.md)
+- [📋 Cheat Sheet](./docs/CheatSheet.md)
 - [💡 Tips](./docs/Tips.md)
 - [🔗 Resources](./docs/Resources.md)
 

@@ -726,6 +726,7 @@ Can't find your issue? Use this quick reference:
 - [🧩 Prefixes](./Prefixes.md) — Commit and branch naming conventions
 - [🚀 Modern](./Modern.md) — Modern Git features and tools
 - [⚙️ Config](./Config.md) — Useful aliases and configuration examples
+- [📋 Cheat Sheet](./CheatSheet.md) — Quick command reference
 - [💡 Tips](./Tips.md) — Practical tips and best practices
 - [🔗 Resources](./Resources.md) — External references and learning materials
 

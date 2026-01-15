@@ -150,6 +150,7 @@ git push origin --delete feat/new-feature
 - [🚀 Modern](./Modern.md) — Modern Git features and tools
 - [🔧 Troubleshooting](./Troubleshooting.md) — Common problems and solutions
 - [⚙️ Config](./Config.md) — Useful aliases and configuration examples
+- [📋 Cheat Sheet](./CheatSheet.md) — Quick command reference
 - [💡 Tips](./Tips.md) — Practical tips and best practices
 - [🔗 Resources](./Resources.md) — External references and learning materials
 

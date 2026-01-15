@@ -738,6 +738,7 @@ git config --global --edit
 - [🧩 Prefixes](./Prefixes.md) — Commit and branch naming conventions
 - [🚀 Modern](./Modern.md) — Modern Git features and tools
 - [🔧 Troubleshooting](./Troubleshooting.md) — Common problems and solutions
+- [📋 Cheat Sheet](./CheatSheet.md) — Quick command reference
 - [💡 Tips](./Tips.md) — Practical tips and best practices
 - [🔗 Resources](./Resources.md) — External references and learning materials
 

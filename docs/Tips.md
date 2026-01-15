@@ -101,6 +101,7 @@ Use [GitHub Desktop](https://desktop.github.com/) or [GitKraken](https://www.git
 - [🚀 Modern](./Modern.md) — Modern Git features and tools
 - [🔧 Troubleshooting](./Troubleshooting.md) — Common problems and solutions
 - [⚙️ Config](./Config.md) — Useful aliases and configuration examples
+- [📋 Cheat Sheet](./CheatSheet.md) — Quick command reference
 - [🔗 Resources](./Resources.md) — External references and learning materials
 
 ---
