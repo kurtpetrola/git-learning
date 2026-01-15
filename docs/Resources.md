@@ -50,6 +50,7 @@
 - [⚙️ Advanced](./Advanced.md)
 - [🚀 Modern](./Modern.md)
 - [🔧 Troubleshooting](./Troubleshooting.md)
+- [⚙️ Config](./Config.md)
 - [💡 Tips](./Tips.md)
 
 ---

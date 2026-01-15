@@ -512,6 +512,7 @@ git log --all --format='%aN' | sort -u | wc -l  # Number of contributors
 - [⚙️ Advanced](./Advanced.md) — Advanced Git commands and workflows
 - [🧩 Prefixes](./Prefixes.md) — Commit and branch naming conventions
 - [🔧 Troubleshooting](./Troubleshooting.md) — Common problems and solutions
+- [⚙️ Config](./Config.md) — Useful aliases and configuration examples
 - [💡 Tips](./Tips.md) — Practical tips and best practices
 - [🔗 Resources](./Resources.md) — External references and learning materials
 

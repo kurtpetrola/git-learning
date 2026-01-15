@@ -13,6 +13,7 @@
 - [⚙️ Advanced](./docs/Advanced.md)
 - [🚀 Modern](./docs/Modern.md)
 - [🔧 Troubleshooting](./docs/Troubleshooting.md)
+- [⚙️ Config](./docs/Config.md)
 - [💡 Tips](./docs/Tips.md)
 - [🔗 Resources](./docs/Resources.md)
 
