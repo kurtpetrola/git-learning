@@ -11,7 +11,7 @@
 This comprehensive Git learning resource includes:
 
 - **📘 Comprehensive Guides** - From basics to advanced Git workflows
-- **� Modern Features** - Git Hooks, Worktrees, LFS, Sparse Checkout, Signed Commits, and more
+- **🚀 Modern Features** - Git Hooks, Worktrees, LFS, Sparse Checkout, Signed Commits, and more
 - **🔧 Troubleshooting** - Step-by-step solutions to common Git problems
 - **⚙️ Config Examples** - Ready-to-use aliases and configurations
 - **📋 Quick Reference** - Printable cheat sheet for everyday use
