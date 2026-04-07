@@ -1,10 +1,10 @@
-# 📋 Git Cheat Sheet
+# Git Cheat Sheet
 
 Quick reference for the most commonly used Git commands.
 
 ---
 
-## ⚙️ Setup & Configuration
+## Setup & Configuration
 
 ```bash
 # Set your name and email
@@ -24,7 +24,7 @@ git config --global --list
 
 ---
 
-## 🏁 Basic Commands
+## Basic Commands
 
 ### Repository Setup
 
@@ -54,7 +54,7 @@ git diff HEAD                     # Show all changes since last commit
 
 ---
 
-## 🌿 Branching & Merging
+## Branching & Merging
 
 ### Branch Management
 
@@ -84,7 +84,7 @@ git merge --abort                 # Abort merge
 
 ---
 
-## 🌐 Remote Operations
+## Remote Operations
 
 ### Remote Management
 
@@ -117,7 +117,7 @@ git clone --branch <name> <url>   # Clone specific branch
 
 ---
 
-## ⏪ Undo & Revert
+## Undo & Revert
 
 ### Unstage & Restore
 
@@ -157,7 +157,7 @@ git stash clear                   # Delete all stashes
 
 ---
 
-## 🔍 Inspection & History
+## Inspection & History
 
 ### Log
 
@@ -189,7 +189,7 @@ git grep "search term"            # Search in repository
 
 ---
 
-## 🧰 Advanced Operations
+## Advanced Operations
 
 ### Rebase
 
@@ -232,7 +232,7 @@ git clean -fd                     # Remove untracked files and directories
 
 ---
 
-## 🎯 Useful Aliases
+## Useful Aliases
 
 Add these to your `.gitconfig` for faster workflow:
 
@@ -251,7 +251,7 @@ git config --global alias.up "pull --rebase --autostash"
 
 ---
 
-## 🚨 Emergency Commands
+## Emergency Commands
 
 ```bash
 # Undo last commit (keep changes)
@@ -278,7 +278,7 @@ git cherry-pick --abort
 
 ---
 
-## 📊 Quick Reference Table
+## Quick Reference Table
 
 | Command                 | Description           |
 | :---------------------- | :-------------------- |
@@ -300,18 +300,18 @@ git cherry-pick --abort
 
 ---
 
-## 🔗 See Also
+## See Also
 
 > For detailed explanations and examples:
 
-- [📘 Basics](./Basics.md) — Fundamental Git commands and usage
-- [⚙️ Advanced](./Advanced.md) — Advanced Git commands and workflows
-- [🧩 Prefixes](./Prefixes.md) — Commit and branch naming conventions
-- [🚀 Modern](./Modern.md) — Modern Git features and tools
-- [🔧 Troubleshooting](./Troubleshooting.md) — Common problems and solutions
-- [⚙️ Config](./Config.md) — Useful aliases and configuration examples
-- [💡 Tips](./Tips.md) — Practical tips and best practices
-- [🔗 Resources](./Resources.md) — External references and learning materials
+- [Basics](./Basics.md) — Fundamental Git commands and usage
+- [Advanced](./Advanced.md) — Advanced Git commands and workflows
+- [Prefixes](./Prefixes.md) — Commit and branch naming conventions
+- [Modern](./Modern.md) — Modern Git features and tools
+- [Troubleshooting](./Troubleshooting.md) — Common problems and solutions
+- [Config](./Config.md) — Useful aliases and configuration examples
+- [Tips](./Tips.md) — Practical tips and best practices
+- [Resources](./Resources.md) — External references and learning materials
 
 ---
 

@@ -1,10 +1,10 @@
-# 🧩 Git Prefixes
+# Git Prefixes
 
 Consistent commit and branch prefixes help maintain clarity, streamline collaboration, and enable automation such as changelog generation and CI/CD triggers.
 
 ---
 
-## 🪶 Git Commit Prefixes
+## Git Commit Prefixes
 
 > Based on the [Conventional Commits specification](https://www.conventionalcommits.org/en/v1.0.0/).
 
@@ -23,12 +23,13 @@ Consistent commit and branch prefixes help maintain clarity, streamline collabor
 | **revert**   | Revert a previous commit                    | `revert: undo login fix`                   |
 | **deps**     | Direct dependency version bumps             | `deps: bump firebase version`              |
 
-> ❗ **Breaking Change**: Suffix any prefix with `!` (e.g., `feat!`: or `fix!`:). This signals that the change is API-incompatible and requires a major version bump.
-> 💡 You may combine prefixes for clarity (e.g., `feat+docs: add guide for login feature`), but keep messages concise.
+> **Warning:** **Breaking Change**: Suffix any prefix with `!` (e.g., `feat!`: or `fix!`:). This signals that the change is API-incompatible and requires a major version bump.
+
+> **Tip:** You may combine prefixes for clarity (e.g., `feat+docs: add guide for login feature`), but keep messages concise.
 
 ---
 
-## 🏷️ Common Scopes
+## Common Scopes
 
 Scopes define the specific area of the project the change affects.
 Use them consistently to make your commit history more meaningful.
@@ -43,11 +44,11 @@ Use them consistently to make your commit history more meaningful.
 | **config**    | Environment or project settings           |
 | **docs**      | Documentation content or structure        |
 
-> 🔸 Keep scopes short, lowercase, and descriptive — e.g. `feat(ui): add dark mode toggle`
+> **Note:** Keep scopes short, lowercase, and descriptive — e.g. `feat(ui): add dark mode toggle`
 
 ---
 
-## 🔧 Extended Prefixes (Optional)
+## Extended Prefixes (Optional)
 
 | Prefix    | Purpose                                 | Example                                 |
 | :-------- | :-------------------------------------- | :-------------------------------------- |
@@ -55,11 +56,11 @@ Use them consistently to make your commit history more meaningful.
 | **temp**  | Temporary or experimental change        | `temp: try alternate login method`      |
 | **merge** | Merging branches or resolving conflicts | `merge: resolve feature/auth conflicts` |
 
-> ⚠️ Use these sparingly and squash them before merging to keep the main history clean.
+> **Warning:** Use these sparingly and squash them before merging to keep the main history clean.
 
 ---
 
-## 🧭 Commit Message Format
+## Commit Message Format
 
 `type(scope): short-summary`
 
@@ -68,32 +69,33 @@ Use them consistently to make your commit history more meaningful.
 - feat(auth): add google sign-in support
 - fix(ui): align login button on mobile
 
-> ✅ Keep summaries under 72 characters and use the imperative mood (e.g., “add” instead of “added” or “adds”).
-> 🪄 Pro Tip: Use tools like [Commitizen](https://github.com/commitizen/cz-cli) or [Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog) to enforce these rules automatically.
+> **Tip:** Keep summaries under 72 characters and use the imperative mood (e.g., "add" instead of "added" or "adds").
+
+> **Tip:** Use tools like [Commitizen](https://github.com/commitizen/cz-cli) or [Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog) to enforce these rules automatically.
 
 ---
 
-## ✅ Commit Message Do’s and Don’ts
+## Commit Message Do's and Don'ts
 
 ### Do:
 
 - ✅ Use a clear, concise summary (e.g., `fix(api): handle 404 errors gracefully`)
-- ✅ Write in imperative mood (“add”, “fix”, “update”)
+- ✅ Write in imperative mood ("add", "fix", "update")
 - ✅ Include scope when meaningful
 - ✅ Group related commits logically
 - ✅ Reference issues or PRs when relevant (e.g., `fix(auth): resolve token refresh bug (#42)`)
 
-### Don’t:
+### Don't:
 
-- ❌ Write vague messages like “update”, “fix stuff”, or “misc changes”
-- ❌ Use past tense or third person (“added feature”, “adds login page”)
+- ❌ Write vague messages like "update", "fix stuff", or "misc changes"
+- ❌ Use past tense or third person ("added feature", "adds login page")
 - ❌ Combine unrelated changes in one commit
 - ❌ Use emojis or decorative text in commit subjects
 - ❌ Leave long details in the subject — use the body for explanations instead
 
-> 💬 Think of your commit message as a changelog entry for your future self (and teammates).
+> **Note:** Think of your commit message as a changelog entry for your future self (and teammates).
 
-### 🧩 Good vs Bad Examples
+### Good vs Bad Examples
 
 | ✅ Good Commit                                 | ❌ Bad Commit         |
 | :--------------------------------------------- | :-------------------- |
@@ -103,9 +105,9 @@ Use them consistently to make your commit history more meaningful.
 | `refactor(api): simplify error handling logic` | `cleanup code`        |
 | `chore(deps): bump react version to 18.2.0`    | `update react`        |
 
-> 🔍 Notice how good commits are structured, specific, and action-oriented, while bad ones are vague or inconsistent.
+> **Note:** Notice how good commits are structured, specific, and action-oriented, while bad ones are vague or inconsistent.
 
-## 🌿 Git Branch Prefixes
+## Git Branch Prefixes
 
 | Prefix                 | Purpose                           | Example                          |
 | :--------------------- | :-------------------------------- | :------------------------------- |
@@ -120,32 +122,32 @@ Use them consistently to make your commit history more meaningful.
 | **docs/**              | Documentation updates             | `docs/api-documentation`         |
 | **style/**             | Styling or UI changes             | `style/css-redesign`             |
 
-> ✏️ Use **lowercase** and **hyphens** for branch names (e.g., `feat/add-login-screen`).
+> **Note:** Use **lowercase** and **hyphens** for branch names (e.g., `feat/add-login-screen`).
 
 ---
 
-## ⚙️ Benefits of Using Prefixes
+## Benefits of Using Prefixes
 
-- 🧭 Organized and readable commit history
-- 🪄 Easier changelog generation
-- 🌱 Clear branch purpose and ownership
-- ⚡ Streamlined CI/CD automation
-- 🧑‍💻 Professional and consistent project structure
+- Organized and readable commit history
+- Easier changelog generation
+- Clear branch purpose and ownership
+- Streamlined CI/CD automation
+- Professional and consistent project structure
 
 ---
 
-## 🔗 See Also
+## See Also
 
 > Explore related Git documentation:
 
-- [📘 Basics](./Basics.md) — Fundamental Git commands and usage
-- [⚙️ Advanced](./Advanced.md) — Advanced Git commands and workflows
-- [🚀 Modern](./Modern.md) — Modern Git features and tools
-- [🔧 Troubleshooting](./Troubleshooting.md) — Common problems and solutions
-- [⚙️ Config](./Config.md) — Useful aliases and configuration examples
-- [📋 Cheat Sheet](./CheatSheet.md) — Quick command reference
-- [💡 Tips](./Tips.md) — Practical tips and best practices
-- [🔗 Resources](./Resources.md) — External references and learning materials
+- [Basics](./Basics.md) — Fundamental Git commands and usage
+- [Advanced](./Advanced.md) — Advanced Git commands and workflows
+- [Modern](./Modern.md) — Modern Git features and tools
+- [Troubleshooting](./Troubleshooting.md) — Common problems and solutions
+- [Config](./Config.md) — Useful aliases and configuration examples
+- [Cheat Sheet](./CheatSheet.md) — Quick command reference
+- [Tips](./Tips.md) — Practical tips and best practices
+- [Resources](./Resources.md) — External references and learning materials
 
 ---
 

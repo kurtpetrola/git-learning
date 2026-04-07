@@ -1,12 +1,12 @@
-# 🔧 Git Troubleshooting Guide
+# Git Troubleshooting Guide
 
 Practical solutions to common Git problems and mistakes.
 
-> 💡 This guide helps you diagnose and fix Git issues quickly. Each section follows a problem-solution format with step-by-step instructions.
+> **Tip:** This guide helps you diagnose and fix Git issues quickly. Each section follows a problem-solution format with step-by-step instructions.
 
 ---
 
-## 🔀 Merge Conflicts
+## Merge Conflicts
 
 ### Understanding Merge Conflicts
 
@@ -100,11 +100,11 @@ git mergetool
 code --wait <file>
 ```
 
-> 🧠 Always test your code after resolving conflicts to ensure everything works correctly.
+> **Note:** Always test your code after resolving conflicts to ensure everything works correctly.
 
 ---
 
-## ⏪ Undo & Recovery
+## Undo & Recovery
 
 ### Undo Last Commit (Keep Changes)
 
@@ -121,7 +121,7 @@ git reset --mixed HEAD~1
 ### Undo Last Commit (Discard Changes)
 
 ```bash
-# ⚠️ Warning: This permanently deletes changes
+# Warning: This permanently deletes changes
 git reset --hard HEAD~1
 ```
 
@@ -183,7 +183,7 @@ git push
 **Option 2: Reset (Risky - Rewrites History):**
 
 ```bash
-# ⚠️ Only use on branches you own!
+# Warning: Only use on branches you own!
 git reset --hard <commit-hash>
 git push --force-with-lease
 ```
@@ -198,11 +198,11 @@ git reflog
 git reset --hard <commit-hash>
 ```
 
-> 💡 `reflog` keeps a history of HEAD movements for ~90 days, so you can almost always recover from mistakes.
+> **Tip:** `reflog` keeps a history of HEAD movements for ~90 days, so you can almost always recover from mistakes.
 
 ---
 
-## 🌿 Branch Issues
+## Branch Issues
 
 ### Can't Switch Branches (Uncommitted Changes)
 
@@ -229,7 +229,7 @@ git switch <other-branch>
 **Solution 3: Force Switch (Discard Changes)**
 
 ```bash
-# ⚠️ This discards all changes
+# Warning: This discards all changes
 git switch -f <other-branch>
 ```
 
@@ -293,7 +293,7 @@ git push
 **Solution 3: Reset to Origin (Discard Local Changes)**
 
 ```bash
-# ⚠️ This discards all local commits
+# Warning: This discards all local commits
 git fetch origin
 git reset --hard origin/main
 ```
@@ -313,7 +313,7 @@ git branch --merged main | Where-Object {$_ -notmatch "main"} | ForEach-Object {
 
 ---
 
-## 🌐 Remote Repository Problems
+## Remote Repository Problems
 
 ### Push Rejected (Non-Fast-Forward)
 
@@ -419,7 +419,7 @@ git remote set-url origin https://github.com/username/repo.git
 
 ---
 
-## 📝 Commit History Issues
+## Commit History Issues
 
 ### Wrong Commit Message
 
@@ -484,7 +484,7 @@ pip install git-filter-repo
 # Remove specific file
 git filter-repo --path <file-to-remove> --invert-paths
 
-# Force push (⚠️ this rewrites history)
+# Force push (this rewrites history)
 git push --force-with-lease --all
 ```
 
@@ -504,7 +504,7 @@ git gc --prune=now --aggressive
 git push --force-with-lease --all
 ```
 
-> ⚠️ **Important:** Notify all collaborators before rewriting history. They'll need to re-clone or reset their repositories.
+> **Warning:** Notify all collaborators before rewriting history. They'll need to re-clone or reset their repositories.
 
 ### Split a Large Commit
 
@@ -532,7 +532,7 @@ git rebase -i HEAD~5
 
 ---
 
-## 📋 Staging & Working Directory
+## Staging & Working Directory
 
 ### Unstage Files
 
@@ -598,7 +598,7 @@ git add <files-to-keep-staged>
 
 ---
 
-## 🔐 Authentication & Access
+## Authentication & Access
 
 ### HTTPS Authentication Issues
 
@@ -700,35 +700,35 @@ git push
 
 ---
 
-## 🧩 Quick Problem Finder
+## Quick Problem Finder
 
 Can't find your issue? Use this quick reference:
 
 | Problem                   | See Section                                                 |
 | :------------------------ | :---------------------------------------------------------- |
-| Files show `<<<<<<< HEAD` | [Merge Conflicts](#-merge-conflicts)                        |
-| Need to undo last commit  | [Undo & Recovery](#-undo--recovery)                         |
+| Files show `<<<<<<< HEAD` | [Merge Conflicts](#merge-conflicts)                         |
+| Need to undo last commit  | [Undo & Recovery](#undo--recovery)                          |
 | Lost commits after reset  | [Recover Deleted Commits](#recover-deleted-commits)         |
-| Can't switch branches     | [Branch Issues](#-branch-issues)                            |
-| Push rejected             | [Remote Problems](#-remote-repository-problems)             |
-| Wrong commit message      | [Commit History Issues](#-commit-history-issues)            |
-| Files stuck in staging    | [Staging & Working Directory](#-staging--working-directory) |
-| Authentication failed     | [Authentication & Access](#-authentication--access)         |
+| Can't switch branches     | [Branch Issues](#branch-issues)                             |
+| Push rejected             | [Remote Problems](#remote-repository-problems)              |
+| Wrong commit message      | [Commit History Issues](#commit-history-issues)             |
+| Files stuck in staging    | [Staging & Working Directory](#staging--working-directory)  |
+| Authentication failed     | [Authentication & Access](#authentication--access)          |
 
 ---
 
-## 🔗 See Also
+## See Also
 
 > Explore related Git documentation:
 
-- [📘 Basics](./Basics.md) — Fundamental Git commands and usage
-- [⚙️ Advanced](./Advanced.md) — Advanced Git commands and workflows
-- [🧩 Prefixes](./Prefixes.md) — Commit and branch naming conventions
-- [🚀 Modern](./Modern.md) — Modern Git features and tools
-- [⚙️ Config](./Config.md) — Useful aliases and configuration examples
-- [📋 Cheat Sheet](./CheatSheet.md) — Quick command reference
-- [💡 Tips](./Tips.md) — Practical tips and best practices
-- [🔗 Resources](./Resources.md) — External references and learning materials
+- [Basics](./Basics.md) — Fundamental Git commands and usage
+- [Advanced](./Advanced.md) — Advanced Git commands and workflows
+- [Prefixes](./Prefixes.md) — Commit and branch naming conventions
+- [Modern](./Modern.md) — Modern Git features and tools
+- [Config](./Config.md) — Useful aliases and configuration examples
+- [Cheat Sheet](./CheatSheet.md) — Quick command reference
+- [Tips](./Tips.md) — Practical tips and best practices
+- [Resources](./Resources.md) — External references and learning materials
 
 ---
 

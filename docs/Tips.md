@@ -1,10 +1,10 @@
-# 💡 Git Tips and Best Practices
+# Git Tips and Best Practices
 
 > Quick tips, reminders, and useful patterns to help you become more efficient with Git.
 
 ---
 
-### 🧠 General Tips
+### General Tips
 
 - **Commit often, but with purpose.** Small, meaningful commits make it easier to track changes.
 - **Write clear commit messages.** Use the imperative mood and describe _what_ and _why_.
@@ -15,7 +15,7 @@
 
 ---
 
-### 🧰 Handy Commands
+### Handy Commands
 
 - **Undo last commit (keep changes):**
 
@@ -27,7 +27,6 @@
 
   ```bash
   git reset --hard HEAD~1
-
   ```
 
 - **Amend the previous commit:**
@@ -56,7 +55,7 @@
 
 ---
 
-### 🚀 Workflow Recommendations
+### Workflow Recommendations
 
 - Create a `dev` branch for testing changes before merging to `main`.
 - Use **Pull Requests (PRs)** even in solo projects for practice and documentation.
@@ -65,12 +64,11 @@
 
   ```bash
   git tag -a v1.0.0 -m "Initial release"
-
   ```
 
 ---
 
-### 🧹 Maintenance Tips
+### Maintenance Tips
 
 - **Clean up merged branches (local)**:
 
@@ -85,13 +83,13 @@
 
 ---
 
-### 🪄 Pro Tips
+### Pro Tips
 
 Use [GitHub Desktop](https://desktop.github.com/) or [GitKraken](https://www.gitkraken.com/) for visualizing commits when learning Git workflows.
 
 ---
 
-### 📝 .gitignore Best Practices
+### .gitignore Best Practices
 
 - **Start with a template:** Use [gitignore.io](https://www.toptal.com/developers/gitignore) to generate `.gitignore` for your tech stack.
 - **Common patterns:**
@@ -130,7 +128,7 @@ Use [GitHub Desktop](https://desktop.github.com/) or [GitKraken](https://www.git
 
 ---
 
-### ✍️ Commit Message Templates
+### Commit Message Templates
 
 Create a commit message template for consistency:
 
@@ -138,10 +136,10 @@ Create a commit message template for consistency:
 
 ```
 # <type>(<scope>): <subject>
-# |<----  Using a Maximum Of 50 Characters  ---->|
+# |<----  Using a Maximum Of 50 Characters  --->|
 
 # Explain why this change is being made
-# |<----   Try To Limit Each Line to a Maximum Of 72 Characters   ---->|
+# |<----   Try To Limit Each Line to a Maximum Of 72 Characters   --->|
 
 # Provide links or keys to any relevant tickets, articles or other resources
 # Example: closes #23
@@ -173,7 +171,7 @@ git config --global commit.template ~/.gitmessage
 
 ---
 
-### 🪝 Git Hooks Quick Tips
+### Git Hooks Quick Tips
 
 - **Make hooks executable:** `chmod +x .git/hooks/pre-commit`
 - **Share hooks with team:** Use tools like [Husky](https://typicode.github.io/husky/) (Node.js) or [pre-commit](https://pre-commit.com/) (Python)
@@ -195,7 +193,7 @@ fi
 
 ---
 
-### 🔍 Code Review Best Practices
+### Code Review Best Practices
 
 - **Keep PRs small:** Easier to review, less likely to introduce bugs
 - **Self-review first:** Review your own changes before requesting review
@@ -210,7 +208,7 @@ fi
 
 ---
 
-### 🧼 Repository Hygiene
+### Repository Hygiene
 
 - **Delete merged branches:** Keep repository clean
 
@@ -236,18 +234,18 @@ fi
 
 ---
 
-## 🔗 See Also
+## See Also
 
 > Explore related Git documentation:
 
-- [📘 Basics](./Basics.md) — Fundamental Git commands and usage
-- [🧩 Prefixes](./Prefixes.md) — Commit and branch naming conventions
-- [⚙️ Advanced](./Advanced.md) — Advanced Git commands and workflows
-- [🚀 Modern](./Modern.md) — Modern Git features and tools
-- [🔧 Troubleshooting](./Troubleshooting.md) — Common problems and solutions
-- [⚙️ Config](./Config.md) — Useful aliases and configuration examples
-- [📋 Cheat Sheet](./CheatSheet.md) — Quick command reference
-- [🔗 Resources](./Resources.md) — External references and learning materials
+- [Basics](./Basics.md) — Fundamental Git commands and usage
+- [Prefixes](./Prefixes.md) — Commit and branch naming conventions
+- [Advanced](./Advanced.md) — Advanced Git commands and workflows
+- [Modern](./Modern.md) — Modern Git features and tools
+- [Troubleshooting](./Troubleshooting.md) — Common problems and solutions
+- [Config](./Config.md) — Useful aliases and configuration examples
+- [Cheat Sheet](./CheatSheet.md) — Quick command reference
+- [Resources](./Resources.md) — External references and learning materials
 
 ---
 

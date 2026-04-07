@@ -1,10 +1,10 @@
-# 🔗 Git Learning Resources
+# Git Learning Resources
 
 > A curated list of articles, videos, and tools to deepen your understanding of Git.
 
 ---
 
-### 📘 Official Documentation
+### Official Documentation
 
 - [Git SCM Documentation](https://git-scm.com/doc)
 - [Pro Git Book (Free)](https://git-scm.com/book/en/v2)
@@ -14,7 +14,7 @@
 
 ---
 
-### 🎓 Tutorials and Guides
+### Tutorials and Guides
 
 - [Atlassian Git Tutorials](https://www.atlassian.com/git/tutorials)
 - [Git Guides by GitHub](https://github.com/git-guides)
@@ -23,7 +23,7 @@
 
 ---
 
-### 🎥 YouTube Channels
+### YouTube Channels
 
 - [Traversy Media – Git Crash Course](https://youtu.be/SWYqp7iY_Tc)
 - [The Net Ninja – Git & GitHub Tutorial Series](https://www.youtube.com/playlist?list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR)
@@ -31,7 +31,7 @@
 
 ---
 
-### 🧩 Tools and Utilities
+### Tools and Utilities
 
 - [GitHub Desktop](https://desktop.github.com/)
 - [GitKraken](https://www.gitkraken.com/)
@@ -44,7 +44,7 @@
 
 ---
 
-### 🎮 Interactive Learning Platforms
+### Interactive Learning Platforms
 
 - [Learn Git Branching](https://learngitbranching.js.org/) - Visual and interactive Git tutorial
 - [Git Kata](https://github.com/eficode-academy/git-katas) - Git exercises and practice scenarios
@@ -54,7 +54,7 @@
 
 ---
 
-### 🧪 Practice Environments
+### Practice Environments
 
 - [GitHub Learning Lab](https://github.com/apps/github-learning-lab) - Hands-on courses
 - [Katacoda Git Scenarios](https://www.katacoda.com/courses/git) - Browser-based Git practice
@@ -63,7 +63,7 @@
 
 ---
 
-### 👥 Community Resources
+### Community Resources
 
 - [Stack Overflow - Git Tag](https://stackoverflow.com/questions/tagged/git) - Q&A for Git problems
 - [r/git](https://www.reddit.com/r/git/) - Git subreddit community
@@ -73,7 +73,7 @@
 
 ---
 
-### 📚 Books and Advanced Materials
+### Books and Advanced Materials
 
 **Free Books:**
 
@@ -89,7 +89,7 @@
 
 ---
 
-### 🎯 Git Internals & Deep Dives
+### Git Internals & Deep Dives
 
 - [Git from the inside out](https://codewords.recurse.com/issues/two/git-from-the-inside-out) - Understanding Git's graph structure
 - [Git Objects](https://git-scm.com/book/en/v2/Git-Internals-Git-Objects) - Blobs, trees, commits
@@ -98,7 +98,7 @@
 
 ---
 
-### 📊 Cheat Sheets
+### Cheat Sheets
 
 - [GitHub Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf) - Official PDF
 - [GitLab Git Cheat Sheet](https://about.gitlab.com/images/press/git-cheat-sheet.pdf) - Printable reference
@@ -107,22 +107,22 @@
 
 ---
 
-## 🔗 See Also
+## See Also
 
 > Explore related Git documentation:
 
-- [📘 Basics](./Basics.md)
-- [🧩 Prefixes](./Prefixes.md)
-- [⚙️ Advanced](./Advanced.md)
-- [🚀 Modern](./Modern.md)
-- [🔧 Troubleshooting](./Troubleshooting.md)
-- [⚙️ Config](./Config.md)
-- [📋 Cheat Sheet](./CheatSheet.md)
-- [💡 Tips](./Tips.md)
+- [Basics](./Basics.md)
+- [Prefixes](./Prefixes.md)
+- [Advanced](./Advanced.md)
+- [Modern](./Modern.md)
+- [Troubleshooting](./Troubleshooting.md)
+- [Config](./Config.md)
+- [Cheat Sheet](./CheatSheet.md)
+- [Tips](./Tips.md)
 
 ---
 
-## 🧠 Keep Learning
+## Keep Learning
 
 Experiment with Git commands in a test repository before using them in production projects.  
-Explore, break things, and rebuild — that’s the best way to master Git!
+Explore, break things, and rebuild — that's the best way to master Git!

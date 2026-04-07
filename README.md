@@ -1,43 +1,35 @@
-# 🧠 Git Learning
+# Git Learning
 
 A comprehensive repository for mastering **Git fundamentals**, **best practices**, and **workflow conventions**.
 
-> **Goal:** A structured, practical guide to moving from basic commands to professional workflow conventions, including branch prefixes, safe force-pushing, and clean history management.
+## What's Inside
 
----
+This Git learning resource includes:
 
-## ✨ What's Inside
+- **Comprehensive Guides** - From basics to advanced Git workflows
+- **Modern Features** - Git Hooks, Worktrees, LFS, Sparse Checkout, Signed Commits, and more
+- **Troubleshooting** - Step-by-step solutions to common Git problems
+- **Config Examples** - Ready-to-use aliases and configurations
+- **Quick Reference** - Printable cheat sheet for everyday use
+- **Best Practices** - .gitignore patterns, commit templates, code review tips
+- **Curated Resources** - Interactive learning platforms, books, and communities
 
-This comprehensive Git learning resource includes:
-
-- **📘 Comprehensive Guides** - From basics to advanced Git workflows
-- **🚀 Modern Features** - Git Hooks, Worktrees, LFS, Sparse Checkout, Signed Commits, and more
-- **🔧 Troubleshooting** - Step-by-step solutions to common Git problems
-- **⚙️ Config Examples** - Ready-to-use aliases and configurations
-- **📋 Quick Reference** - Printable cheat sheet for everyday use
-- **💡 Best Practices** - .gitignore patterns, commit templates, code review tips
-- **🔗 Curated Resources** - Interactive learning platforms, books, and communities
-
----
-
-## 🚀 Quick Start
+## Quick Start
 
 **New to Git?** Start here:
 
-1. [📘 Basics](./docs/Basics.md) - Essential commands and workflows
-2. [📋 Cheat Sheet](./docs/CheatSheet.md) - Quick command reference
-3. [💡 Tips](./docs/Tips.md) - Best practices and patterns
+1. [Basics](./docs/Basics.md) - Essential commands and workflows
+2. [Cheat Sheet](./docs/CheatSheet.md) - Quick command reference
+3. [Tips](./docs/Tips.md) - Best practices and patterns
 
 **Already familiar with Git?** Dive deeper:
 
-- [🚀 Modern](./docs/Modern.md) - Modern Git features and tools
-- [🔧 Troubleshooting](./docs/Troubleshooting.md) - Fix common issues
-- [⚙️ Config](./docs/Config.md) - Optimize your workflow
-- [⚙️ Advanced](./docs/Advanced.md) - Advanced commands and techniques
+- [Modern](./docs/Modern.md) - Modern Git features and tools
+- [Troubleshooting](./docs/Troubleshooting.md) - Fix common issues
+- [Config](./docs/Config.md) - Optimize your workflow
+- [Advanced](./docs/Advanced.md) - Advanced commands and techniques
 
----
-
-## 👥 Who Is This For?
+## Who Is This For?
 
 - **Beginners** learning Git for the first time
 - **Developers** wanting to level up their Git skills
@@ -45,23 +37,19 @@ This comprehensive Git learning resource includes:
 - **Instructors** teaching version control
 - **Anyone** who wants a comprehensive Git reference
 
----
+## Documentation
 
-## 📚 Documentation
+- [Basics](./docs/Basics.md) - Fundamental Git commands and usage
+- [Prefixes](./docs/Prefixes.md) - Commit and branch naming conventions
+- [Advanced](./docs/Advanced.md) - Advanced Git commands and workflows
+- [Modern](./docs/Modern.md) - Modern Git features and tools
+- [Troubleshooting](./docs/Troubleshooting.md) - Common problems and solutions
+- [Config](./docs/Config.md) - Useful aliases and configuration examples
+- [Cheat Sheet](./docs/CheatSheet.md) - Quick command reference
+- [Tips](./docs/Tips.md) - Practical tips and best practices
+- [Resources](./docs/Resources.md) - External references and learning materials
 
-- [📘 Basics](./docs/Basics.md) - Fundamental Git commands and usage
-- [🧩 Prefixes](./docs/Prefixes.md) - Commit and branch naming conventions
-- [⚙️ Advanced](./docs/Advanced.md) - Advanced Git commands and workflows
-- [🚀 Modern](./docs/Modern.md) - Modern Git features and tools
-- [🔧 Troubleshooting](./docs/Troubleshooting.md) - Common problems and solutions
-- [⚙️ Config](./docs/Config.md) - Useful aliases and configuration examples
-- [📋 Cheat Sheet](./docs/CheatSheet.md) - Quick command reference
-- [💡 Tips](./docs/Tips.md) - Practical tips and best practices
-- [🔗 Resources](./docs/Resources.md) - External references and learning materials
-
----
-
-## 📂 Project Structure
+## Project Structure
 
 ```
 git-learning/
@@ -79,9 +67,7 @@ git-learning/
     └── Resources.md        # Learning materials & tools
 ```
 
----
-
-## 🧭 References
+## References
 
 - [Git Guides](https://github.com/git-guides)
 - [Atlassian Git Tutorials](https://www.atlassian.com/git/tutorials)
@@ -89,20 +75,13 @@ git-learning/
 - [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
 - [GitLab Version Control Best Practices](https://about.gitlab.com/topics/version-control/version-control-best-practices/)
 
----
+## Support & Connect
 
-## 💖 Support & Connect
-
-If you found this repository helpful, consider leaving a ⭐ on [Git Learning](https://github.com/kurtpetrola/git-learning).  
+If you found this repository helpful, consider leaving a star on [Git Learning](https://github.com/kurtpetrola/git-learning).  
 You can also [follow me](https://github.com/kurtpetrola) on GitHub to stay updated with my latest projects.
 
----
+## License
 
-## ⚖️ License
+This repository is licensed under the [MIT License](https://github.com/kurtpetrola/git-learning/blob/main/LICENSE).
 
-This repository is licensed under the [MIT License](https://github.com/kurtpetrola/git-learning/blob/main/LICENSE).  
-It serves as a personal learning resource, but others are welcome to explore, reference, and reuse the materials with proper attribution.
-
----
-
-_This repository provides a comprehensive, structured resource for mastering Git - from fundamentals to professional workflows._
+> It serves as a personal learning resource, but others are welcome to explore, reference, and reuse the materials with proper attribution.

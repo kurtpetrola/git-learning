@@ -1,12 +1,12 @@
-# 🚀 Modern Git Features
+# Modern Git Features
 
 Essential modern Git capabilities and tools for contemporary development workflows.
 
-> 📘 This guide complements [Basics](./Basics.md) and [Advanced](./Advanced.md) with features that have become critical in professional environments.
+> **Note:** This guide complements [Basics](./Basics.md) and [Advanced](./Advanced.md) with features that have become critical in professional environments.
 
 ---
 
-## 🪝 Git Hooks
+## Git Hooks
 
 Automated scripts that run at specific points in Git's execution flow.
 
@@ -45,11 +45,11 @@ echo "✅ Pre-commit checks passed!"
 - **[pre-commit](https://pre-commit.com/)** — Multi-language hook framework
 - **[lefthook](https://github.com/evilmartians/lefthook)** — Fast and powerful Git hooks manager
 
-> 💡 Make hooks executable: `chmod +x .git/hooks/pre-commit`
+> **Tip:** Make hooks executable: `chmod +x .git/hooks/pre-commit`
 
 ---
 
-## 🌳 Git Worktrees
+## Git Worktrees
 
 Work on multiple branches simultaneously without switching or stashing.
 
@@ -96,11 +96,11 @@ cd ../testing-main
 npm test
 ```
 
-> 🧠 Each worktree has its own working directory but shares the same `.git` repository, saving disk space.
+> **Note:** Each worktree has its own working directory but shares the same `.git` repository, saving disk space.
 
 ---
 
-## 📦 Git Submodules & Subtrees
+## Git Submodules & Subtrees
 
 Manage external dependencies and nested repositories within your project.
 
@@ -144,11 +144,11 @@ git subtree pull --prefix=libs/external https://github.com/user/repo.git main --
 git subtree push --prefix=libs/external https://github.com/user/repo.git main
 ```
 
-> ⚠️ Choose submodules for clean separation; choose subtrees for simplified contributor experience.
+> **Warning:** Choose submodules for clean separation; choose subtrees for simplified contributor experience.
 
 ---
 
-## 💾 Git LFS (Large File Storage)
+## Git LFS (Large File Storage)
 
 Efficiently handle large files in Git repositories.
 
@@ -212,11 +212,11 @@ git lfs fetch --all
 git lfs status
 ```
 
-> 💡 GitHub free tier includes 1GB LFS storage and 1GB bandwidth per month. Paid plans available for larger needs.
+> **Note:** GitHub free tier includes 1GB LFS storage and 1GB bandwidth per month. Paid plans available for larger needs.
 
 ---
 
-## 🎯 Sparse Checkout
+## Sparse Checkout
 
 Clone and work with only specific directories from large repositories.
 
@@ -261,11 +261,11 @@ git sparse-checkout list
 git sparse-checkout disable
 ```
 
-> 🚀 Sparse checkout can significantly improve clone and checkout times for large monorepos.
+> **Tip:** Sparse checkout can significantly improve clone and checkout times for large monorepos.
 
 ---
 
-## 🎨 Git Attributes (.gitattributes)
+## Git Attributes (.gitattributes)
 
 Control how Git handles specific files in your repository.
 
@@ -333,11 +333,11 @@ tests/ export-ignore
 git config diff.json.textconv "jq ."
 ```
 
-> 🧠 Git attributes are version-controlled, ensuring consistent behavior across all clones.
+> **Note:** Git attributes are version-controlled, ensuring consistent behavior across all clones.
 
 ---
 
-## 🔐 Signed Commits (GPG)
+## Signed Commits (GPG)
 
 Verify commit authenticity with cryptographic signatures.
 
@@ -408,11 +408,11 @@ export GPG_TTY=$(tty)
 git config --global gpg.program "C:/Program Files (x86)/GnuPG/bin/gpg.exe"
 ```
 
-> 💡 Add your GPG public key to GitHub/GitLab under Settings → SSH and GPG keys.
+> **Tip:** Add your GPG public key to GitHub/GitLab under Settings → SSH and GPG keys.
 
 ---
 
-## 🧹 Git Maintenance & Optimization
+## Git Maintenance & Optimization
 
 Keep your repository healthy and performant.
 
@@ -485,11 +485,11 @@ git shortlog -sn
 git log --all --format='%aN' | sort -u | wc -l  # Number of contributors
 ```
 
-> 🚀 Run `git gc` periodically to optimize repository performance and reclaim disk space.
+> **Tip:** Run `git gc` periodically to optimize repository performance and reclaim disk space.
 
 ---
 
-## 🧩 Quick Command Reference
+## Quick Command Reference
 
 | Command                   | Purpose                         |
 | :------------------------ | :------------------------------ |
@@ -504,18 +504,18 @@ git log --all --format='%aN' | sort -u | wc -l  # Number of contributors
 
 ---
 
-## 🔗 See Also
+## See Also
 
 > Explore related Git documentation:
 
-- [📘 Basics](./Basics.md) — Fundamental Git commands and usage
-- [⚙️ Advanced](./Advanced.md) — Advanced Git commands and workflows
-- [🧩 Prefixes](./Prefixes.md) — Commit and branch naming conventions
-- [🔧 Troubleshooting](./Troubleshooting.md) — Common problems and solutions
-- [⚙️ Config](./Config.md) — Useful aliases and configuration examples
-- [📋 Cheat Sheet](./CheatSheet.md) — Quick command reference
-- [💡 Tips](./Tips.md) — Practical tips and best practices
-- [🔗 Resources](./Resources.md) — External references and learning materials
+- [Basics](./Basics.md) — Fundamental Git commands and usage
+- [Advanced](./Advanced.md) — Advanced Git commands and workflows
+- [Prefixes](./Prefixes.md) — Commit and branch naming conventions
+- [Troubleshooting](./Troubleshooting.md) — Common problems and solutions
+- [Config](./Config.md) — Useful aliases and configuration examples
+- [Cheat Sheet](./CheatSheet.md) — Quick command reference
+- [Tips](./Tips.md) — Practical tips and best practices
+- [Resources](./Resources.md) — External references and learning materials
 
 ---
 

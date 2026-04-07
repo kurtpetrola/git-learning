@@ -1,12 +1,12 @@
-# ⚙️ Git Config Examples
+# Git Config Examples
 
 Practical Git configurations, aliases, and settings to boost your productivity.
 
-> 💡 Copy these configurations to enhance your Git workflow. Apply them using `git config --global` or add directly to your `~/.gitconfig` file.
+> **Tip:** Copy these configurations to enhance your Git workflow. Apply them using `git config --global` or add directly to your `~/.gitconfig` file.
 
 ---
 
-## 🎯 Useful Aliases
+## Useful Aliases
 
 Shortcuts and enhanced commands to speed up your workflow.
 
@@ -154,7 +154,7 @@ git config --global alias.ready "log @{u}.. --oneline"
 
 ---
 
-## 🌐 Global Configuration
+## Global Configuration
 
 Essential global settings for a better Git experience.
 
@@ -239,7 +239,7 @@ git config --global mergetool.vscode.cmd "code --wait \$MERGED"
 
 ---
 
-## 🎨 UI/UX Improvements
+## UI/UX Improvements
 
 Enhance Git's visual output and user experience.
 
@@ -337,7 +337,7 @@ git config --global status.showStash true
 
 ---
 
-## ⚡ Performance Settings
+## Performance Settings
 
 Optimize Git's performance for faster operations.
 
@@ -410,7 +410,7 @@ git config --global core.untrackedCache true
 
 ---
 
-## 💻 Platform-Specific Configurations
+## Platform-Specific Configurations
 
 Settings tailored for Windows, macOS, and Linux.
 
@@ -490,7 +490,7 @@ git config --global credential.helper cache
 
 ---
 
-## 🔒 Safety & Best Practices
+## Safety & Best Practices
 
 Configurations to prevent common mistakes and protect your work.
 
@@ -589,7 +589,7 @@ git config --global user.signingkey YOUR_GPG_KEY_ID
 
 ---
 
-## 📋 Complete Example `.gitconfig`
+## Complete Example `.gitconfig`
 
 Here's a ready-to-use configuration combining the best settings:
 
@@ -670,7 +670,7 @@ Here's a ready-to-use configuration combining the best settings:
 
 ---
 
-## 🚀 Quick Setup
+## Quick Setup
 
 Copy and paste to apply the recommended configuration:
 
@@ -711,7 +711,7 @@ git config --global help.autocorrect 10
 
 ---
 
-## 🔍 View Your Config
+## View Your Config
 
 ```bash
 # View all global configuration
@@ -729,18 +729,18 @@ git config --global --edit
 
 ---
 
-## 🔗 See Also
+## See Also
 
 > Explore related Git documentation:
 
-- [📘 Basics](./Basics.md) — Fundamental Git commands and usage
-- [⚙️ Advanced](./Advanced.md) — Advanced Git commands and workflows
-- [🧩 Prefixes](./Prefixes.md) — Commit and branch naming conventions
-- [🚀 Modern](./Modern.md) — Modern Git features and tools
-- [🔧 Troubleshooting](./Troubleshooting.md) — Common problems and solutions
-- [📋 Cheat Sheet](./CheatSheet.md) — Quick command reference
-- [💡 Tips](./Tips.md) — Practical tips and best practices
-- [🔗 Resources](./Resources.md) — External references and learning materials
+- [Basics](./Basics.md) — Fundamental Git commands and usage
+- [Advanced](./Advanced.md) — Advanced Git commands and workflows
+- [Prefixes](./Prefixes.md) — Commit and branch naming conventions
+- [Modern](./Modern.md) — Modern Git features and tools
+- [Troubleshooting](./Troubleshooting.md) — Common problems and solutions
+- [Cheat Sheet](./CheatSheet.md) — Quick command reference
+- [Tips](./Tips.md) — Practical tips and best practices
+- [Resources](./Resources.md) — External references and learning materials
 
 ---
 
